@@ -1,0 +1,136 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ------------------------------------------------------------------
+   Pacific Ears — design tokens & component classes
+   Rebuild with: npm run build
+   ------------------------------------------------------------------ */
+
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-white text-ink antialiased;
+  }
+  ::selection {
+    @apply bg-brand-700 text-white;
+  }
+  :focus-visible {
+    @apply outline-none ring-2 ring-accent ring-offset-2 ring-offset-white;
+  }
+}
+
+@layer components {
+  .container-x {
+    @apply mx-auto w-full max-w-6xl px-5 sm:px-8;
+  }
+
+  .link {
+    @apply font-medium text-accent-deep underline decoration-[#4a7ad4] decoration-1 underline-offset-4 transition-colors hover:text-brand-700 hover:decoration-brand-700;
+  }
+
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-full text-sm font-semibold leading-none transition duration-200;
+  }
+  .btn-primary {
+    @apply btn bg-brand-700 px-5 py-3 text-white shadow-card hover:-translate-y-px hover:bg-brand-600 hover:shadow-lift;
+  }
+  .btn-ghost {
+    @apply btn border border-brand-200 bg-white px-5 py-3 text-brand-800 hover:border-accent hover:bg-accent-light/25;
+  }
+
+  .eyebrow {
+    @apply text-xs font-semibold uppercase tracking-[0.18em] text-accent-deep;
+  }
+
+  .card {
+    @apply rounded-2xl border border-brand-100 bg-white shadow-card transition duration-300;
+  }
+
+  .badge {
+    @apply inline-flex items-center gap-1.5 rounded-full border border-accent-light bg-accent-light/30 px-3 py-1 text-[11px] font-semibold uppercase tracking-wider text-accent-ink;
+  }
+
+  /* Product manual card */
+  .manual {
+    @apply card flex flex-col overflow-hidden hover:-translate-y-0.5 hover:border-accent-light hover:shadow-lift;
+  }
+  .manual-media {
+    @apply relative flex aspect-square items-center justify-center overflow-hidden bg-gradient-to-b from-white to-mist;
+  }
+  .manual-media img {
+    @apply h-full w-full object-contain p-5 transition duration-500;
+  }
+  .manual:hover .manual-media img {
+    @apply scale-[1.04];
+  }
+
+  .doclink {
+    @apply inline-flex items-center gap-1.5 rounded-lg border border-brand-100 bg-white px-2.5 py-1.5 text-[12.5px] font-medium text-brand-800 transition hover:border-accent hover:bg-accent-light/25 hover:text-accent-ink;
+  }
+
+  .highlight {
+    @apply bg-accent-light/45 px-1 font-semibold text-brand-800;
+  }
+
+
+  /* Region switcher — header pills */
+  .region-pill {
+    @apply inline-flex items-center gap-1.5 rounded-full border border-brand-200 bg-white px-2.5 py-1.5 text-[12.5px] font-semibold text-brand-800 transition hover:border-accent hover:bg-accent-light/25 hover:text-accent-ink sm:px-3;
+  }
+  .region-pill-flag {
+    @apply text-[13px] leading-none sm:text-[14px];
+  }
+
+  /* Region switcher — hero buttons */
+  .region-btn {
+    @apply flex items-center gap-3 rounded-xl border border-brand-200 bg-white px-3.5 py-3 text-left shadow-card transition hover:-translate-y-px hover:border-accent hover:bg-accent-light/20 hover:shadow-lift;
+  }
+  .region-btn-flag {
+    @apply text-[20px] leading-none;
+  }
+
+  .prose-pe p {
+    @apply text-[15.5px] leading-relaxed text-ink/75;
+  }
+
+  /* Table of contents (manual pages) */
+  .toc-link {
+    @apply -ml-px block border-l-2 border-transparent py-1.5 pl-4 text-ink/55 transition hover:border-accent-soft hover:text-accent-deep;
+  }
+  .toc-link.is-active {
+    @apply border-accent font-semibold text-brand-700;
+  }
+
+  /* FAQ / accordion */
+  .faq {
+    @apply overflow-hidden rounded-xl border border-brand-100 bg-white transition hover:border-accent-light;
+  }
+  .faq > summary {
+    @apply flex cursor-pointer list-none items-center justify-between gap-4 px-4 py-3.5 text-[14px] font-semibold text-brand-900;
+  }
+  .faq > summary::-webkit-details-marker {
+    display: none;
+  }
+  .faq > summary::after {
+    content: '+';
+    @apply ml-auto text-lg font-normal leading-none text-accent transition;
+  }
+  .faq[open] > summary::after {
+    content: '−';
+  }
+  .faq > p {
+    @apply border-t border-brand-100 px-4 py-3.5 text-[13.5px] leading-relaxed text-ink/70;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}

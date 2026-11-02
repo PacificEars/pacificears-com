@@ -1,0 +1,59 @@
+# Trailing-slash normalisation (keeps the live URL structure identical)
+/instructions                /instructions/                 301
+/instructions/sanidry-manual /instructions/sanidry-manual/  301
+
+# Legacy / convenience paths
+/sanidry-manual              /instructions/sanidry-manual/  301
+/manuals                     /instructions/                 301
+/instructions/index.html     /instructions/                 301
+
+# Legacy WordPress media paths (old links in emails / bookmarks)
+/wp-content/uploads/2023/11/Pacific-Ears-Product-Disclaimer.pdf  /assets/docs/Pacific-Ears-Product-Disclaimer.pdf  301
+/wp-content/uploads/2025/02/Manual-Pro-Series-210x70-1.pdf  /assets/docs/Manual-Pro-Series-210x70-1.pdf  301
+/wp-content/uploads/2025/09/Explanation-Sheet-ProSeries-v4_pdf.pdf  /assets/docs/Explanation-Sheet-ProSeries-v4_pdf.pdf  301
+/wp-content/uploads/2023/03/PACS-PRO-10-Specification-sheet.pdf  /assets/docs/PACS-PRO-10-Specification-sheet.pdf  301
+/wp-content/uploads/2023/03/PACS-PRO-15-Specification-sheet.pdf  /assets/docs/PACS-PRO-15-Specification-sheet.pdf  301
+/wp-content/uploads/2023/03/PACS-PRO-17-Specification-sheet-compressed.pdf  /assets/docs/PACS-PRO-17-Specification-sheet-compressed.pdf  301
+/wp-content/uploads/2023/03/PACS-PRO-20-Specification-sheet-compressed.pdf  /assets/docs/PACS-PRO-20-Specification-sheet-compressed.pdf  301
+/wp-content/uploads/2023/03/PACS-PRO-26-Specification-sheet_compressed.pdf  /assets/docs/PACS-PRO-26-Specification-sheet_compressed.pdf  301
+/wp-content/uploads/2023/03/PACS-PRO-27-Specification-sheet_compressed.pdf  /assets/docs/PACS-PRO-27-Specification-sheet_compressed.pdf  301
+/wp-content/uploads/2023/03/PACS-PRO-31-Specification-sheet_compressed.pdf  /assets/docs/PACS-PRO-31-Specification-sheet_compressed.pdf  301
+/wp-content/uploads/2023/03/PACS-PRO-Impact-15-Specification-sheet.pdf  /assets/docs/PACS-PRO-Impact-15-Specification-sheet.pdf  301
+/wp-content/uploads/2023/03/PACS-PRO-Impact-19-Specification-sheet.pdf  /assets/docs/PACS-PRO-Impact-19-Specification-sheet.pdf  301
+/wp-content/uploads/2023/03/PACS-DriverComm-Specification-sheet.pdf  /assets/docs/PACS-DriverComm-Specification-sheet.pdf  301
+/wp-content/uploads/2023/03/PACS-PRO-Communicator-Specification-sheet.pdf  /assets/docs/PACS-PRO-Communicator-Specification-sheet.pdf  301
+/wp-content/uploads/2024/09/064167-Custom-Earphone-Sleeve-Manual-220x70-1.pdf  /assets/docs/064167-Custom-Earphone-Sleeve-Manual-220x70-1.pdf  301
+/wp-content/uploads/2025/01/05XXXX-PE-Sleepsound-User-Manual-240x70-1.pdf  /assets/docs/05XXXX-PE-Sleepsound-User-Manual-240x70-1.pdf  301
+/wp-content/uploads/2023/11/Swim-Plugs-Manual.pdf  /assets/docs/Swim-Plugs-Manual.pdf  301
+/wp-content/uploads/2023/11/Motor-Sport-Manual.pdf  /assets/docs/Motor-Sport-Manual.pdf  301
+/wp-content/uploads/2023/11/Custom-In-Ear-User-Manual.pdf  /assets/docs/Custom-In-Ear-User-Manual.pdf  301
+/wp-content/uploads/2024/12/063385-Custom-In-Ear-User-Manual-440x70-FA.pdf  /assets/docs/063385-Custom-In-Ear-User-Manual-440x70-FA.pdf  301
+/wp-content/uploads/2023/01/PACS-Impact-Instructions-v1.1-Final.pdf.pdf  /assets/docs/PACS-Impact-Instructions-v1.1-Final.pdf.pdf  301
+/wp-content/uploads/2023/01/PACS-White-19-Instructions-v1.1-Final.pdf.pdf  /assets/docs/PACS-White-19-Instructions-v1.1-Final.pdf.pdf  301
+/wp-content/uploads/2023/01/PACS-Purple-16-Instructions-v1.3-Final.pdf.pdf  /assets/docs/PACS-Purple-16-Instructions-v1.3-Final.pdf.pdf  301
+/wp-content/uploads/2025/05/ER-Musicians-Earplugs-Manual.pdf  /assets/docs/ER-Musicians-Earplugs-Manual.pdf  301
+/wp-content/uploads/2023/10/SaniDry-IEM-Dryer-Instructions-v1.4.pdf.pdf  /assets/docs/SaniDry-IEM-Dryer-Instructions-v1.4.pdf.pdf  301
+/wp-content/uploads/2023/11/retina-logo-pe.png  /assets/img/logo-pacific-ears.png  301
+/wp-content/uploads/2023/01/logo-pacific-ears.png  /assets/img/logo-pacific-ears.png  301
+/wp-content/uploads/2023/01/cropped-Site-icon-270x270.png  /assets/img/favicon.png  301
+/wp-content/uploads/2025/04/PE.com-AU-map.png  /assets/img/map-australia.webp  301
+/wp-content/uploads/2025/04/NZ-map-pacific-ears.png  /assets/img/map-new-zealand.webp  301
+/wp-content/uploads/2023/11/Selection_297-screencap.jpg  /assets/img/pacs-pro-series.webp  301
+/wp-content/uploads/2023/11/Selection_298-screencap.jpg  /assets/img/pacs-sleepsounds.webp  301
+/wp-content/uploads/2023/11/Selection_299-screencap.jpg  /assets/img/swimfit.webp  301
+/wp-content/uploads/2023/11/Selection_300-screencap.jpg  /assets/img/swimfit-aware.webp  301
+/wp-content/uploads/2023/11/Selection_301-screencap.jpg  /assets/img/drivercomm.webp  301
+/wp-content/uploads/2023/11/Selection_302-screencap.jpg  /assets/img/pro-drivercomm.webp  301
+/wp-content/uploads/2023/11/Selection_303-screencap.jpg  /assets/img/communicator.webp  301
+/wp-content/uploads/2023/11/Selection_304-screencap.jpg  /assets/img/pro-communicator.webp  301
+/wp-content/uploads/2023/11/pacific-ears-IEM-classic.jpeg  /assets/img/iem-classic.webp  301
+/wp-content/uploads/2023/11/Ambient-In-Ear-Monitors-ACS-scaled_magic.jpg  /assets/img/iem-ambient.webp  301
+/wp-content/uploads/2023/12/pacs-impact-universal-earplugs.jpg  /assets/img/pacs-impact-universal.webp  301
+/wp-content/uploads/2023/12/pacs-19-earplugs.jpg  /assets/img/pacs-19-earplugs.webp  301
+/wp-content/uploads/2023/12/pacs-16-earplugs.jpg  /assets/img/pacs-16-earplugs.webp  301
+/wp-content/uploads/2024/09/custom-sleeves-1.jpg  /assets/img/custom-sleeves.webp  301
+/wp-content/uploads/2025/05/ER_Musicians_custom_earplugs_beab6223-77cf-456c-8549-8d0f0ab35556.webp  /assets/img/er-musicians.webp  301
+
+# Anything else left on old WordPress paths -> manuals index
+/wp-content/*  /instructions/  301
+/wp-json/*     /  301
